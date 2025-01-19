@@ -2,17 +2,17 @@ package linkedList;
 
 import java.util.Scanner;
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int new_data) {
-        data = new_data;
-        next = null;
-    }
-}
-
 public class Day65ReverseALinkedList {
+    private static class Node {
+        int data;
+        Node next;
+    
+        Node(int new_data) {
+            data = new_data;
+            next = null;
+        }
+    }
+    
     private static class Solution {
         public Node reverseList(Node head) {
             Node curr = head, prev = null, next;
