@@ -22,6 +22,7 @@ public class Day71DetectLoopInLinkedList {
                 fast = fast.next.next;
                 
                 if(slow == fast) {
+                    System.out.println("Loop detected at node with data: " + slow.data);
                     return true;
                 }
             }
